@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font/style2.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <title>Tienda con carrito de compras</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="logo">
+        <a href="inicio.html"><img src="img/icon.png" alt="Logo de la empresa"></a>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="inicio.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li id="submenu"><span class="icon-cart"></span>
+            <div id="carrito">
+              <table id="lista-carrito" class="lista">
+                  <thead>
+                      <tr>
+                          <th>Imagen</th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th>Cantidad</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="button">Vaciar Carrito</a>
+      </div>
+          </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<section>
+  <div class="splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <h1>Variedades</h1>
+          <img src="img/1.jpg" alt="">
+        </li>
+        <li class="splide__slide">
+          <h1>Dulces Deleitantes</h1>
+          <img src="img/2.jpg" alt=""></li>
+        <li class="splide__slide">
+          <h1>Ingredientes Naturales</h1>
+          <img src="img/3.jpg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <div id="contenido">
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Salchipapa</h2>
+      </div>
+      <div class="precio">$20</div>
+      <a href="#" class="button agregar-carrito" data-id="1">Agregar Carrito</a>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Plato tipico</h2>
+      </div>
+      <div class="precio">$25</div>
+      <a href="#" class="button agregar-carrito" data-id="2">Agregar Carrito</a>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Tacos</h2>
+      </div>
+      <div class="precio">$30</div>
+      <a href="#" class="button agregar-carrito" data-id="3">Agregar Carrito</a>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Anticucho</h2>
+      </div>
+      <div class="precio">$55</div>
+      <a href="#" class="button agregar-carrito" data-id="4">Agregar Carrito</a>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Pizza</h2>
+      </div>
+      <div class="precio">$19</div>
+      <a href="#" class="button agregar-carrito" data-id="5">Agregar Carrito</a>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Fideos rojos</h2>
+      </div>
+      <div class="precio">$20</div>
+      <a href="#" class="button agregar-carrito" data-id="6">Agregar Carrito</a>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Ceviche</h2>
+      </div>
+      <div class="precio">$25</div>
+      <a href="#" class="button agregar-carrito" data-id="7">Agregar Carrito</a>
+    </div>
+    <div class="card">
+      <div class="img">
+        <img src="img/3.jpg" alt="">
+      </div>
+      <div class="contenedor">
+        <h2>Frejoles</h2>
+      </div>
+      <div class="precio">$19</div>
+      <a href="#" class="button agregar-carrito" data-id="8">Agregar Carrito</a>
+    </div>
+  </div>
+  <footer>
+    &copy; Todos los derechos reservados
+  </footer>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <script src="/js/slider.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
